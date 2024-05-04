@@ -1,32 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat_Web</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"><link rel="stylesheet" href="style.css">
+<html lang = "pt-br">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Chat_Web</title>
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <div class = "formulario-login">
+            <div class = "texto">
+                LOGIN
+            </div>
 
-</head>
-<body>
-    <div class="formulario-login">
-        <div class="texto">
-            LOGIN
+            <form name = "login">
+                <div class = "campo">
+                    <div class = "fas fa-envelope"></div>
+                    <input name = "email_telefone" type = "text" placeholder = "Email ou Telefone" required>
+                </div>
+
+                <div class = "campo">
+                    <div class = "fas fa-lock"></div>
+                    <input name = "senha" type = "password" placeholder = "senha" required>
+                </div>
+
+                <button type = "submit">LOGIN</button>
+                <div class = "link">
+                    NÃO É MEMBRO?
+                    <a href = "cadastro.html">Inscreva-se agora</a>
+                </div>
+
+                <div class = "link">
+                    Esqueceu a Senha?
+                    <a href = "recuperarSenhaP1.html">Recupere agora</a>
+                </div>
+            </form>
         </div>
-        <form>
-            <div class="campo">
-                <div class="fas fa-envelope"></div>
-                <input type="text" placeholder="Email ou Telefone">
-            </div>
-            <div class="campo">
-                <div class="fas fa-lock"></div>
-                <input type="senha" placeholder="senha">
-            </div>
-            <button>LOGIN</button>
-            <div class="link">
-                NÃO É MEMBRO?
-                <a href="#">Inscreva-se agora</a>
-            </div>
-        </form>
-    </div>
-</body>
+    </body>
 </html>
